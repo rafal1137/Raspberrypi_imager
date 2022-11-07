@@ -37,7 +37,7 @@ jobs:
             apt-get update -y --allow-releaseinfo-change
             apt-get upgrade -y
             apt-get install build-essential libfreeimage-dev libopenal-dev libpango1.0-dev libsndfile-dev libudev-dev \
-            libasound2-dev libjpeg8-dev libwebp-dev automake libgl1-mesa-glx libjpeg62-turbo libogg0 libopenal1 libvorbis0a \
+            libasound2-dev libjpeg62-turbo-dev libwebp-dev automake libgl1-mesa-glx libjpeg62-turbo libogg0 libopenal1 libvorbis0a \
             libvorbisfile3 zlib1g libx11-dev libglew-dev libegl1-mesa-dev \
             nasm autoconf git cmake zip gcc g++ libtool libxrandr-dev x11proto-randr-dev
             apt-get autoremove --purge -y
