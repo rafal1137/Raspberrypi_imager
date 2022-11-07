@@ -33,10 +33,10 @@ jobs:
           optimize_image: yes
           commands: |
             # Disable IPv6 in case it is configured but does not work
-            ping6 -c 1 www.ietf.org || sudo sysctl -w net.ipv6.conf.eth0.disable_ipv6=1
-            sudo apt-get update -y --allow-releaseinfo-change
-            sudo apt-get autoremove --purge -y
-            sudo apt-get clean
+            ping6 -c 1 www.ietf.org || sysctl -w net.ipv6.conf.eth0.disable_ipv6=1
+            apt-get update -y --allow-releaseinfo-change
+            apt-get autoremove --purge -y
+            apt-get clean
 
       - name: Compress the release image
         run: |
