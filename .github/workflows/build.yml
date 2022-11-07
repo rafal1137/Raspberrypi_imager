@@ -59,6 +59,7 @@ jobs:
   create_release:
     name: Release
     runs-on: ubuntu-20.04
+    needs: [Build]
     steps:
       - name: Download the image artifacts
         uses: actions/download-artifact@v3.0.1
