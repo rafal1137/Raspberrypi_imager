@@ -27,9 +27,9 @@ jobs:
         id: arm_runner_install
         with:
           image_additional_mb: 4096
-          base_image: ${{ matrix.base_image }}
-          cpu: ${{ matrix.cpu }}
-          cpu_info: ${{ matrix.cpu_info }}
+          base_image: raspi_4_bullseye:20220121
+          cpu: cortex-a53
+          cpu_info: cpuinfo/raspberrypi_4b
           optimize_image: yes
           commands: |
             # Disable IPv6 in case it is configured but does not work
